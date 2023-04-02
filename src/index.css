@@ -1,0 +1,313 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+  --success:#c6efce;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+   color: #696767;
+  /* color: var(--primary); */
+  text-decoration: none;
+}
+.pages .home {
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.pages .users{
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+  
+}
+
+ .pages .updateusers{
+  max-width: 400px;
+  padding: 20px;
+  margin: 0 auto;
+  
+}
+
+
+/* homepage */
+.home  {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.updateusers  {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+.user-list {
+  margin: 0 0 10px 0;
+  margin-left: 100px;
+  padding: 20px;
+  position: relative;
+  font-size: 1.2em;
+  color: #555555de;
+  
+}
+
+.timecard-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 10px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  width: 70%;
+}
+.timecard-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+
+.timecard-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.timecard-details span {
+   top: 6px;
+  right: 20px;
+   padding: 0px 10px ;
+}
+
+#edit {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+  text-decoration: none;
+ 
+}
+
+.employee-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 10px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  width: 70%;
+}
+.employee-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+
+.employee-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.employee-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+/* new workout form */
+form label, input {
+  display: block;
+}
+form h3{
+  color: #555555de;
+}
+form input {
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-size: 1em;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.checkbox {
+ display: flex;
+ 
+}
+
+.checkbox input {
+ padding: 6px;
+  top: 0;
+  left: 0;
+ height: 20px;
+   width: 20px;
+ }
+ .checkbox label {
+ margin-left: 20px;
+ }
+
+
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30%;
+}
+div.error {
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+ 
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  width: 60%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+div.success {
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+ 
+  padding: 10px;
+  background: var(--success);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 4px;
+  width: 60%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+input.error {
+  border: 1px solid var(--error);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+nav a:hover {
+  color: var(--primary)
+}
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+/* datetime block */
+.datetime{
+  text-align: center;
+  font-size: 1.2em;
+}
+.datetime span h1{
+  color: var(--primary);
+margin-top: -10px;
+
+}
+.employee-clock .btn-clockin{
+  background: var(--primary);
+  color: #fff;
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  width: 150px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 0px;
+}
+
+.employee-clock .btn-clockout{
+  background: #26659b;
+  color: #fff;
+  border: 1px solid #26659b ;
+  padding: 6px 10px;
+  border-radius: 4px;
+  width: 150px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 30px;
+}
+
+
+.employee-clock input{
+ 
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: 50%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-size: 1em;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
